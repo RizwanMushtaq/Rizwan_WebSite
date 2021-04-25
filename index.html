@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM</title>
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/device_W_1280.css">
+    <link rel="stylesheet" href="css/device_W_1024.css">
+    <link rel="stylesheet" href="css/device_W_720.css">
+    <link rel="stylesheet" href="css/device_W_320.css">
+
+    <script src="src/scrollAcrossPage.js" defer></script>
+</head>
+<body>
+    <div id="home" class="fullscreen home">
+        <div class="title">
+            Hi, Welcome <br>
+            I am RIZWAN
+        </div>
+        <div class="menu">
+                <button class="menuButton aboutMeButton" onclick="scrollToAboutMe()"><p>About Me</p></button>
+                <button class="menuButton skillsButton" onclick="scrollToSkills()"><p>Skills</p></button>
+                <button class="menuButton portfolioButton" onclick="scrollToPortfolio()"><p>Portfolio</p></button>
+                <button class="menuButton cvButton" onclick="downloadCV()"><p>CV</p></button>
+                <button class="menuButton contactButton" onclick="scrollToContact()"><p>Contact</p></button>
+        </div>
+        <div class="dropdownMenu">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="photoDiv">
+            <picture>
+                <source media="(max-width: 720px)" srcset="images/rizwan_W722_250-306.png" alt="photo">
+                <source media="(max-width: 1024px)" srcset="images/rizwan_W722_300-382.png" alt="photo">
+                <img src="images/rizwan_W1282_343-437.png" alt="photo">
+            </picture>
+        </div>
+    </div>
+    <div id="aboutMe" class="fullscreen aboutMe">
+        <p>
+            <h1>About Me</h1>
+            <h2>Who I am and why I aspired to code</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, enim repellat. Rem suscipit voluptatibus esse officiis ad velit quod, omnis iste hic vitae, quo consectetur porro minima distinctio impedit! Molestias?</p>
+        </p>
+    </div>
+    <div id="skills" class="fullscreen skills"><p>a<p></div>
+    <div id="portfolio" class="fullscreen portfolio"><p>b</p></div>
+    <div id="contact" class="fullscreen contact"><p>c</p></div>
+</body>
+</html>
