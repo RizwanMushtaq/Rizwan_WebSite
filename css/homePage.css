@@ -1,0 +1,458 @@
+/*-----------------------------------------Styling of Home Page------------------------------------------------------------------------*/
+.dropdownMenu {
+    display: none;
+}
+.home {
+    background-color: #cfd8df;
+    display: grid;
+    grid-template-columns: repeat(20, calc(100% / 20));
+    grid-template-rows: repeat(20, calc(100% / 20)); 
+}
+.title {
+    color: #28243d;
+    font-size: 56px;
+    font-weight: bolder;
+    grid-column: 5/11;
+    grid-row: 3/9;
+}
+.menu {
+    grid-column: 5/11;
+    grid-row: 10/16;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(5, 40px);
+    grid-row-gap: 8px;
+}
+.menuButton {
+    color: #28243d;
+    border: none;
+    background-color: white;
+    text-align: left;
+    font-size: 16px;
+}
+
+/*styling of each button inside menu*/
+.aboutMeButton {
+    grid-column: 1/14;
+    grid-row: 1/2;
+}
+.skillsButton {
+    grid-column: 1/15;
+    grid-row: 2/3;
+}
+.portfolioButton {
+    grid-column: 1/16;
+    grid-row: 3/4;
+}
+.cvButton {
+    grid-column: 1/15;
+    grid-row: 4/5;
+}
+.contactButton {
+    grid-column: 1/14;
+    grid-row: 5/6;
+}
+/*styling of p element inside button*/
+.aboutMeButton p {
+    padding-left: 80px;
+}
+.skillsButton {
+    padding-left: 104px;
+}
+.portfolioButton {
+    padding-left: 120px;
+}
+.cvButton {
+    padding-left: 104px;
+}
+.contactButton {
+    padding-left: 80px;
+}
+.photoDiv {
+    grid-column: 12/17;
+    grid-row: 3/18;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+/*styling of each button transitions*/
+.menuButton {
+    transition: 0.5s;
+}
+.menuButton:hover {
+    background-color: #28243d;
+    color: white;
+}
+
+/*-------------------------------------------------------- MAX WIDTH = 1280Px--------------------------------------------------*/
+@media screen and (max-width: 1280px) {
+    /*Styling of Home Page
+    .dropdownMenu {
+        display: none;
+    }
+    .home {
+        background-color: #cfd8df;
+        display: grid;
+        grid-template-columns: repeat(20, calc(100% / 20));
+        grid-template-rows: repeat(20, calc(100% / 20)); 
+    }
+    */
+    
+    .title {
+        font-size: 48px;
+        font-weight: bolder;
+        grid-column: 4/10;
+        grid-row: 3/9;
+    }
+    
+    .menu {
+        grid-column: 4/10;
+        grid-row: 10/16;
+        display: grid;
+        grid-template-columns: repeat(20, 14px);
+        grid-template-rows: repeat(5, 32px);
+        grid-row-gap: 6px;
+    }
+    
+    .menuButton {
+        border: none;
+        background-color: white;
+        text-align: left;
+        font-size: 14px;
+    }
+    
+    /*styling of each button inside menu*/
+    .aboutMeButton {
+        grid-column: 1/14;
+        grid-row: 1/2;
+    }
+    .skillsButton {
+        grid-column: 1/15;
+        grid-row: 2/3;
+    }
+    .portfolioButton {
+        grid-column: 1/16;
+        grid-row: 3/4;
+    }
+    .cvButton {
+        grid-column: 1/15;
+        grid-row: 4/5;
+    }
+    .contactButton {
+        grid-column: 1/14;
+        grid-row: 5/6;
+    }
+    /*styling of p element inside button*/
+    .aboutMeButton p {
+        padding-left: 64px;
+    }
+    .skillsButton {
+        padding-left: 88px;
+    }
+    .portfolioButton {
+        padding-left: 104px;
+    }
+    .cvButton {
+        padding-left: 88px;
+    }
+    .contactButton {
+        padding-left: 64px;
+    }
+    .photoDiv {
+        grid-column: 11/18;
+        grid-row: 3/18;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    /*styling of each button transitions
+    .menuButton {
+        transition: 0.5s;
+    }
+    .menuButton:hover {
+        background-color: lightgreen;
+    }
+    */
+
+}
+/*-------------------------------------------------------- MAX WIDTH = 1024Px--------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    /*Styling of Home Page
+    .dropdownMenu {
+        display: none;
+    }
+    .home {
+        background-color: #cfd8df;
+        display: grid;
+        grid-template-columns: repeat(20, calc(100% / 20));
+        grid-template-rows: repeat(20, calc(100% / 20)); 
+    }
+    */
+    
+    .title {
+        font-size: 36px;
+        font-weight: bolder;
+        grid-column: 4/11;
+        grid-row: 3/9;
+    }
+    
+    .menu {
+        grid-column: 4/10;
+        grid-row: 10/16;
+        display: grid;
+        grid-template-columns: repeat(20, 12px);
+        grid-template-rows: repeat(5, 24px);
+        grid-row-gap: 6px;
+    }
+    
+    .menuButton {
+        border: none;
+        background-color: white;
+        text-align: left;
+        font-size: 12px;
+    }
+    
+    /*styling of each button inside menu*/
+    .aboutMeButton {
+        grid-column: 1/14;
+        grid-row: 1/2;
+    }
+    .skillsButton {
+        grid-column: 1/15;
+        grid-row: 2/3;
+    }
+    .portfolioButton {
+        grid-column: 1/16;
+        grid-row: 3/4;
+    }
+    .cvButton {
+        grid-column: 1/15;
+        grid-row: 4/5;
+    }
+    .contactButton {
+        grid-column: 1/14;
+        grid-row: 5/6;
+    }
+    /*styling of p element inside button*/
+    .aboutMeButton p {
+        padding-left: 56px;
+    }
+    .skillsButton {
+        padding-left: 64px;
+    }
+    .portfolioButton {
+        padding-left: 72px;
+    }
+    .cvButton {
+        padding-left: 64px;
+    }
+    .contactButton {
+        padding-left: 56px;
+    }
+    .photoDiv {
+        grid-column: 10/19;
+        grid-row: 3/18;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    /*styling of each button transitions
+    .menuButton {
+        transition: 0.5s;
+    }
+    .menuButton:hover {
+        background-color: lightgreen;
+    }
+    */  
+}
+
+/*-------------------------------------------------------- MAX WIDTH = 720Px--------------------------------------------------*/
+@media screen and (max-width:720px) {
+    /*Styling of Home Page
+    .dropdownMenu {
+        display: none;
+    }
+    .home {
+        background-color: #cfd8df;
+        display: grid;
+        grid-template-columns: repeat(20, calc(100% / 20));
+        grid-template-rows: repeat(20, calc(100% / 20)); 
+    }
+    */
+    
+    .title {
+        font-size: 24px;
+        font-weight: bolder;
+        grid-column: 2/20;
+        grid-row: 2/5;
+        text-align: center;
+    }
+    
+    .menu {
+        grid-column: 3/18;
+        grid-row: 16/20;
+        display: grid;
+        grid-template-columns: repeat(20, 12px);
+        grid-template-rows: repeat(5, 24px);
+        grid-row-gap: 6px;
+    }
+    
+    .menuButton {
+        border: none;
+        background-color: white;
+        text-align: left;
+        font-size: 12px;
+    }
+    
+    /*styling of each button inside menu*/
+    .aboutMeButton {
+        grid-column: 1/15;
+        grid-row: 1/2;
+    }
+    .skillsButton {
+        grid-column: 1/16;
+        grid-row: 2/3;
+    }
+    .portfolioButton {
+        grid-column: 1/17;
+        grid-row: 3/4;
+    }
+    .cvButton {
+        grid-column: 1/16;
+        grid-row: 4/5;
+    }
+    .contactButton {
+        grid-column: 1/15;
+        grid-row: 5/6;
+    }
+    /*styling of p element inside button*/
+    .aboutMeButton p {
+        padding-left: 48px;
+    }
+    .skillsButton {
+        padding-left: 56px;
+    }
+    .portfolioButton {
+        padding-left: 64px;
+    }
+    .cvButton {
+        padding-left: 56px;
+    }
+    .contactButton {
+        padding-left: 48px;
+    }
+    .photoDiv {
+        grid-column: 1/21;
+        grid-row: 3/15;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    /*styling of each button transitions
+    .menuButton {
+        transition: 0.5s;
+    }
+    .menuButton:hover {
+        background-color: lightgreen;
+    }
+    */
+}
+
+/*-------------------------------------------------------- MAX WIDTH = 320Px--------------------------------------------------*/
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 320px) {
+    /*Styling of Home Page
+   .dropdownMenu {
+       display: none;
+   }
+   .home {
+       background-color: #cfd8df;
+       display: grid;
+       grid-template-columns: repeat(20, calc(100% / 20));
+       grid-template-rows: repeat(20, calc(100% / 20)); 
+   }
+   */
+   
+   .title {
+       font-size: 16px;
+       font-weight: bolder;
+       grid-column: 2/20;
+       grid-row: 2/5;
+       text-align: center;
+   }
+   
+   .menu {
+       grid-column: 3/20;
+       grid-row: 16/20;
+       display: grid;
+       grid-template-columns: repeat(20, 8px);
+       grid-template-rows: repeat(5, 16px);
+       grid-row-gap: 4px;
+   }
+   
+   .menuButton {
+       border: none;
+       background-color: white;
+       text-align: left;
+       font-size: 12px;
+   }
+   
+   /*styling of each button inside menu*/
+   .aboutMeButton {
+       grid-column: 1/16;
+       grid-row: 1/2;
+   }
+   .skillsButton {
+       grid-column: 1/17;
+       grid-row: 2/3;
+   }
+   .portfolioButton {
+       grid-column: 1/18;
+       grid-row: 3/4;
+   }
+   .cvButton {
+       grid-column: 1/17;
+       grid-row: 4/5;
+   }
+   .contactButton {
+       grid-column: 1/16;
+       grid-row: 5/6;
+   }
+   /*styling of p element inside button*/
+   .aboutMeButton p {
+       padding-left: 36px;
+   }
+   .skillsButton {
+       padding-left: 44px;
+   }
+   .portfolioButton {
+       padding-left: 52px;
+   }
+   .cvButton {
+       padding-left: 44px;
+   }
+   .contactButton {
+       padding-left: 36px;
+   }
+   .photoDiv {
+       grid-column: 1/21;
+       grid-row: 3/15;
+       overflow: hidden;
+       display: flex;
+       align-items: center;
+       justify-content: center;  
+   }
+   /*styling of each button transitions
+   .menuButton {
+       transition: 0.5s;
+   }
+   .menuButton:hover {
+       background-color: lightgreen;
+   }
+   */
+
+}

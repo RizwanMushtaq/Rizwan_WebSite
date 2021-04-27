@@ -1,12 +1,6 @@
 /*
 Remember, CSS rules that appear later in the embedded styles override earlier rules if both have the same specificity. 
-This means that you can set rules for tablets by putting the Breakpoint 4 media query first, 
-then set styles for mobile devices with a Breakpoint 2 media query.
 
-Because the Breakpoint 2 styles come after Breakpoint 4, 
-your mobile styles will override your tablet styles when the Breakpoint 2 query is triggered. 
-This means that you don’t have to set min-width for any of your media queries, as long as they are arranged in the correct order.
-Here is an example order:
 Desktop styles (not in a media query)
 Tablet styles (max-width: 768px)
 Mobile styles (max-width: 414px)
@@ -23,94 +17,4 @@ body {
 .fullscreen {
     width: 100%;
     height: 100vh;
-}
-/*Styling of Home Page*/
-.dropdownMenu {
-    display: none;
-}
-.home {
-    background-color: #cfd8df;
-    display: grid;
-    grid-template-columns: repeat(20, calc(100% / 20));
-    grid-template-rows: repeat(20, calc(100% / 20)); 
-}
-.title {
-    color: #28243d;
-    font-size: 56px;
-    font-weight: bolder;
-    grid-column: 5/11;
-    grid-row: 3/9;
-}
-.menu {
-    grid-column: 5/11;
-    grid-row: 10/16;
-    display: grid;
-    grid-template-columns: repeat(20, 20px);
-    grid-template-rows: repeat(5, 40px);
-    grid-row-gap: 8px;
-}
-.menuButton {
-    color: #28243d;
-    border: none;
-    background-color: white;
-    text-align: left;
-    font-size: 16px;
-}
-
-/*styling of each button inside menu*/
-.aboutMeButton {
-    grid-column: 1/14;
-    grid-row: 1/2;
-}
-.skillsButton {
-    grid-column: 1/15;
-    grid-row: 2/3;
-}
-.portfolioButton {
-    grid-column: 1/16;
-    grid-row: 3/4;
-}
-.cvButton {
-    grid-column: 1/15;
-    grid-row: 4/5;
-}
-.contactButton {
-    grid-column: 1/14;
-    grid-row: 5/6;
-}
-/*styling of p element inside button*/
-.aboutMeButton p {
-    padding-left: 80px;
-}
-.skillsButton {
-    padding-left: 104px;
-}
-.portfolioButton {
-    padding-left: 120px;
-}
-.cvButton {
-    padding-left: 104px;
-}
-.contactButton {
-    padding-left: 80px;
-}
-.photoDiv {
-    grid-column: 12/17;
-    grid-row: 3/18;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-}
-/*styling of each button transitions*/
-.menuButton {
-    transition: 0.5s;
-}
-.menuButton:hover {
-    background-color: #28243d;
-    color: white;
-}
-/*Styling of Skills Page.......................................................*/
-.skills {
-    background-color: blue;
 }
