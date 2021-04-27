@@ -1,0 +1,58 @@
+
+.aboutMe {
+    background-color: #cfd8df;
+    display: flex;
+    flex-direction: column; 
+    font-size: 16px;
+}
+.aboutMeHeader {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #28243d;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.aboutMeHeader span {
+    background-color: #28243d;
+    color: white;
+    font-size: 32px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: "Playball", sans-serif;
+}
+.aboutMeContent {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+.aboutMeContent button {
+    border: none;
+    outline: none;
+    background-color: #cfd8df;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+}
+.aboutMeContent button:hover {
+    background-color: rgba(157, 255, 0, 0.883);
+}
+.aboutMeFooter {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #28243d;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    
+}

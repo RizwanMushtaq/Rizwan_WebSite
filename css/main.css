@@ -10,9 +10,7 @@ Mobile styles (max-width: 414px)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Audiowide", sans-serif;
 }
 .fullscreen {
     width: 100%;
