@@ -1,0 +1,50 @@
+.portfolioPage{
+    background-color: #cfd8df;
+    display: grid;
+    grid-template-columns: repeat(20, calc(100% / 20));
+    grid-template-rows: repeat(20, calc(100% / 20));
+}
+.portfolioPage .portfolioPageTitle{
+    color: #28243d;
+    font-size: 64px;
+    font-weight: bolder;
+    grid-column: 3/10;
+    grid-row: 3/6;
+}
+.portfolioPage .portfolioPageMenu{
+    grid-column: 3/8;
+    grid-row: 7/16;
+
+    display: flex;
+    flex-direction: column;
+}
+.portfolioPage .portfolioPageMenu div{
+    width: 240px;
+    height: 135px;
+}
+.portfolioPage .portfolioPageMenu div img{
+    width: 100%;
+    height: 100%;
+}
+.portfolioPage .portfolioPageMenu .printMyTweetAppthumbnail{
+    border: #28243d 4px solid;
+}
+.portfolioPage .portfolioPagePrintMyTweetAppProject{
+    grid-column: 8/19;
+    grid-row: 6/19;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    
+}
+.portfolioPage .portfolioPagePrintMyTweetAppProject .buttonsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+}
+.portfolioPage .portfolioPagePrintMyTweetAppProject .buttonsContainer button{
+    width: 200px;
+    height: 56px;
+}
