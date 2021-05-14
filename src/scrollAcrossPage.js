@@ -1,20 +1,20 @@
 function scrollToAboutMe() {
-    const aboutMe = document.getElementById('aboutMe');
-    aboutMe.scrollIntoView({
+    const aboutMePage = document.querySelector('.aboutMePage');
+    aboutMePage.scrollIntoView({
         block: 'start',
         behavior: 'smooth',
     });
 }
 function scrollToSkills() {
-    const skills = document.getElementById('skills');
-    skills.scrollIntoView({
+    const skillsPage = document.querySelector('.skillsPage');
+    skillsPage.scrollIntoView({
         block: 'start',
         behavior: 'smooth',
     });
 }
 function scrollToPortfolio() {
-    const portfolio = document.getElementById('portfolio');
-    portfolio.scrollIntoView({
+    const portfolioPage = document.querySelector('.portfolioPage');
+    portfolioPage.scrollIntoView({
         block: 'start',
         behavior: 'smooth',
     });
@@ -24,8 +24,8 @@ function downloadCV() {
     alert('Function under development');
 }
 function scrollToContact() {
-    const contact = document.getElementById('contact');
-    contact.scrollIntoView({
+    const contactPage = document.querySelector('.contactPage');
+    contactPage.scrollIntoView({
         block: 'start',
         behavior: 'smooth',
     });

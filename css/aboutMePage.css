@@ -1,57 +1,38 @@
-
-.aboutMe {
+.aboutMePage {
     background-color: #cfd8df;
-    display: flex;
-    flex-direction: column; 
-    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(20, calc(100% / 20));
+    grid-template-rows: repeat(20, calc(100% / 20));
 }
-.aboutMeHeader {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #28243d;
-    color: white;
+.aboutMePage .aboutMePageTitle{
+    color: #28243d;
+    font-size: 64px;
     font-weight: bolder;
-    text-transform: uppercase;
+    grid-column: 5/11;
+    grid-row: 3/9;
 }
-.aboutMeHeader span {
-    background-color: #28243d;
-    color: white;
-    font-size: 32px;
-    font-weight: lighter;
-    text-transform: uppercase;
-}
-.aboutMeContent {
-    height: 80vh;
+.aboutMePageContent{
+    grid-column: 12/17;
+    grid-row: 3/18;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+    justify-content: center; 
+}
+.aboutMePageButtonDiv{
+    grid-column: 5/11;
+    grid-row: 10/16;
     
 }
-.aboutMeContent button {
+.aboutMePageButtonDiv button{
+    height: 72px;
+    width: 200px;
     border: none;
     outline: none;
-    background-color: #cfd8df;
-    font-size: 16px;
-    width: 200px;
-    height: 50px;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 24px;
 }
-.aboutMeContent button:hover {
-    background-color: rgba(157, 255, 0, 0.883);
-}
-.aboutMeFooter {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.aboutMePageButtonDiv button:hover{
     background-color: #28243d;
     color: white;
-    font-weight: bolder;
-    text-transform: uppercase;
-    
 }

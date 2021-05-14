@@ -10,7 +10,7 @@
 }
 .title {
     color: #28243d;
-    font-size: 56px;
+    font-size: 64px;
     font-weight: bolder;
     grid-column: 5/11;
     grid-row: 3/9;
@@ -28,7 +28,7 @@
     border: none;
     background-color: white;
     text-align: left;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 /*styling of each button inside menu*/
