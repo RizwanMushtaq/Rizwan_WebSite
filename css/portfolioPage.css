@@ -46,5 +46,18 @@
 }
 .portfolioPage .portfolioPagePrintMyTweetAppProject .buttonsContainer button{
     width: 200px;
-    height: 56px;
+    height: 40px;
+    font-size: 24px;
+    background-color: white;
+    border: none;
+}
+.portfolioPage .portfolioPagePrintMyTweetAppProject .buttonsContainer button:hover{
+    background-color: #28243d;
+    color: white;
+    border: none;
+}
+.portfolioPage .portfolioPagePrintMyTweetAppProject .description ul,
+.portfolioPage .portfolioPagePrintMyTweetAppProject .description ol {
+    padding-left: 32px;
+    font-size: 24px;
 }

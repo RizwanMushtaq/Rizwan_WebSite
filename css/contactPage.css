@@ -1,0 +1,45 @@
+.contactPage {
+    background-color: #cfd8df;
+    display: grid;
+    grid-template-columns: repeat(20, calc(100% / 20));
+    grid-template-rows: repeat(20, calc(100% / 20));
+}
+.contactPage .contactPageTitle{
+    color: #28243d;
+    font-size: 64px;
+    font-weight: bolder;
+    grid-column: 3/9;
+    grid-row: 3/6;
+}
+.contactPage .contactPageForm{
+    grid-column: 9/19;
+    grid-row: 3/18;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+}
+.contactPage .contactPageButtonDiv{
+    grid-column: 3/9;
+    grid-row: 7/12;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(5, 40px);
+    grid-row-gap: 8px;
+    
+}
+.contactPage .contactPageButtonDiv button{
+    color: #28243d;
+    border: none;
+    background-color: white;
+    text-align: left;
+    font-size: 24px;
+    padding-left: 8px;
+    transition: 0.5s;
+
+    grid-column: 1/14;
+    grid-row: 1/2;
+}
+.contactPage .contactPageButtonDiv button:hover{
+    background-color: #28243d;
+    color: white;
+}
