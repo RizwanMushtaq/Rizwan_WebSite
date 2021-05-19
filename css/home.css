@@ -1,0 +1,152 @@
+.homeDropDownMenu{
+    display: none;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(20, 1rem);
+    grid-template-rows: repeat(5, 3rem);
+    grid-row-gap: 0.5rem;
+}
+.menu button {
+    color: #28243d;
+    border: none;
+    background-color: white;
+    text-align: left;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+/*styling of each button inside menu*/
+.aboutMeButton {
+    grid-column: 1/17;
+    grid-row: 1/2;
+}
+.skillsButton {
+    grid-column: 1/19;
+    grid-row: 2/3;
+}
+.portfolioButton {
+    grid-column: 1/21;
+    grid-row: 3/4;
+}
+.cvButton {
+    grid-column: 1/19;
+    grid-row: 4/5;
+}
+.contactButton {
+    grid-column: 1/17;
+    grid-row: 5/6;
+}
+/*styling of content*/
+.homeContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+/*-------------------------------------------------------- MAX WIDTH = 1280Px--------------------------------------------------*/
+@media screen and (max-width: 1280px) {
+
+}
+/*-------------------------------------------------------- MAX WIDTH = 1024Px--------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+   
+}
+/*-------------------------------------------------------- MAX WIDTH = 860Px--------------------------------------------------*/
+@media screen and (max-width: 860px) {
+   
+}
+/*-------------------------------------------------------- MAX WIDTH = 720Px--------------------------------------------------*/
+@media screen and (max-width: 720px) {
+   .homeMenu{
+       display: none;
+   }
+   .homeDropDownMenu{
+        display: block;
+        margin-top: 1rem;
+        grid-column: 16/19;
+        grid-row: 3/9;
+        width:10.5rem;
+        height:7rem;
+        background:white;
+        transition:.6s;
+   }
+   .homeDropDownMenu .dropDownContent{
+        position:absolute;
+        width:10.5rem;
+        height:7rem;
+        background:white;
+        transition:.6s;
+   }
+   .homeDropDownMenu .dropDownContent .dropDownMenuButton{
+        width:10.5rem;
+        height:7rem;
+        border: none;
+        outline: none;
+        background-color: white;
+        color: #28243d;
+        font-size: 2rem;
+   }
+   .homeDropDownMenu .dropDownContent:hover{
+        height: 42rem;
+    }
+    .homeDropDownMenu .dropDownContent .dropDownContentButton{
+        position:absolute;
+        top:0;
+        left:0;
+        width:10.5rem;
+        height:7rem;
+        background:transparent;
+        color:transparent;
+        cursor:pointer;
+        transition:.6s;
+        z-index: -10;
+        background-color: white;
+        color: #28243d;
+        font-size: 2rem;
+        border: none;
+    }
+    .dropDownContent:hover > .dropDownMenuButton{
+        background-color: #28243d;
+        color: white;
+    }
+
+    .dropDownContent:hover > .aboutMeD{
+        top:7rem;
+        z-index: 1;
+    }
+    .dropDownContent:hover > .skillsD{
+        top:14rem;
+        z-index: 2;
+    }
+    .dropDownContent:hover > .portfolioD{
+        top:21rem;
+        z-index: 3;
+    }
+    .dropDownContent:hover > .cvButtonD{
+        top:28rem;
+        z-index: 4;
+    }
+    .dropDownContent:hover > .contactD{
+        top:35rem;
+        z-index: 5;
+    }
+
+    /*home content*/
+   .homeContent {
+        grid-column: 3/19;
+        grid-row: 6/19;
+        overflow: hidden;  
+    }
+}
+/*-------------------------------------------------------- MAX WIDTH = 640Px--------------------------------------------------*/
+@media screen and (max-width: 640px) {
+  
+}
+/*-------------------------------------------------------- MAX WIDTH = 480Px--------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    
+}
+/*-------------------------------------------------------- MAX WIDTH = 320Px--------------------------------------------------*/
+@media screen and (max-width: 320px) {
+    
+}

@@ -9,39 +9,53 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Playball|Open Sans">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/aboutMe.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!--
+        <link rel="stylesheet" href="css/homePage.css">
     <link rel="stylesheet" href="css/aboutMePage.css">
     <link rel="stylesheet" href="css/skillsPage.css">
     <link rel="stylesheet" href="css/portfolioPage.css">
     <link rel="stylesheet" href="css/contactPage.css">
+    -->
+    
 
     <script src="src/scrollAcrossPage.js" defer></script>
 </head>
 <body>
     <!--Start of Home Page************************************************************************************-->
     <div class="fullscreen home">
-        <div class="title">
+        <div class="homeTitle title">
             Hi, Welcome <br>
             I am RIZWAN
         </div>
-        <div class="menu">
-                <button class="menuButton aboutMeButton" onclick="scrollToAboutMe()"><p>About Me</p></button>
-                <button class="menuButton skillsButton" onclick="scrollToSkills()"><p>Skills</p></button>
-                <button class="menuButton portfolioButton" onclick="scrollToPortfolio()"><p>Portfolio</p></button>
-                <button class="menuButton cvButton" onclick="downloadCV()"><p>CV</p></button>
-                <button class="menuButton contactButton" onclick="scrollToContact()"><p>Contact</p></button>
+        <div class="homeMenu menu">
+                <button class="menuButton aboutMeButton" onclick="scrollToAboutMe()">About Me</button>
+                <button class="menuButton skillsButton" onclick="scrollToSkills()">Skills</button>
+                <button class="menuButton portfolioButton" onclick="scrollToPortfolio()">Portfolio</button>
+                <button class="menuButton cvButton" onclick="downloadCV()">CV</button>
+                <button class="menuButton contactButton" onclick="scrollToContact()">Contact</button>
         </div>
-        <div class="dropdownMenu">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+
+        <div class="homeDropDownMenu">
+            <div class="dropDownContent">
+                <button class="dropDownMenuButton">Menu</button>
+                <button class="dropDownContentButton aboutMeD" onclick="scrollToAboutMe()">About Me</button>
+                <button class="dropDownContentButton skillsD" onclick="scrollToSkills()">Skills</button>
+                <button class="dropDownContentButton portfolioD" onclick="scrollToPortfolio()">Portfolio</button>
+                <button class="dropDownContentButton cvButtonD" onclick="downloadCV()">CV</button>
+                <button class="dropDownContentButton contactD" onclick="scrollToContact()">Contact</button>
             </div>
         </div>
-        <div class="photoDiv">
+        
+        <div class="homeContent photoDiv content">
             <picture>
-                <source media="(max-width: 720px)" srcset="images/rizwan_W722_250-306.png" alt="photo">
+                <source media="(max-width: 480px)" srcset="images/rizwan_W722_250-306.png" alt="photo">
+                <source media="(max-width: 720px)" srcset="images/rizwan_W722_300-382.png" alt="photo">
                 <source media="(max-width: 1024px)" srcset="images/rizwan_W722_300-382.png" alt="photo">
                 <img src="images/rizwan_W1282_343-437.png" alt="photo">
             </picture>
@@ -50,29 +64,26 @@
     <!--End of Home Page************************************************************************************-->
     <!--Start of About Me Page************************************************************************************-->
     <div class="fullscreen aboutMePage">
-        <div class="aboutMePageTitle">
+        <div class="aboutMePageTitle title">
             About Me
         </div>
-        <div class="aboutMePageButtonDiv">
+        <div class="aboutMePageMenu menu">
             <button>Get to know me</button>
         </div>
-        <div class="aboutMePageContent">
+        <div class="aboutMePageContent content">
             <p>Main content</p>
         </div>
     </div>
     <!--End of About Me Page************************************************************************************-->
     <!--Start of Skills Page************************************************************************************-->
     <div class="fullscreen skillsPage">
-        <div class="skillPageTitle">
+        <div class="skillPageTitle title">
             My Skills
         </div>
-        <div class="skillPageMenu">
+        <div class="skillPageMenu menu">
             <button class="programmingSkillsButton">Programming</button>
-            <button class="softwareSkillsButton">Professional Softwares</button>
-            <button class="softSkillsButton">Soft Skills</button>
-            <button class="languageSkillsButton">Languages</button>
         </div>
-        <div class="skillPageProgrammingSkills">
+        <div class="skillPageProgrammingSkills content">
             <!--Adding Circular Progress Bar Box for HTML-->
             <div class="box">
                 <div class="percent percentHTML">
@@ -157,13 +168,13 @@
     <!--End of Skills Page************************************************************************************-->
     <!--Start of Portfolio Page************************************************************************************-->
     <div class="fullscreen portfolioPage">
-        <div class="portfolioPageTitle">
+        <div class="portfolioPageTitle title">
             My Portfolio
         </div>
-        <div class="portfolioPageMenu">
+        <div class="portfolioPageMenu menu">
             <div class="printMyTweetAppthumbnail"><img src="images/portfolioPage/PrintMyTweetImage_240-135.png" alt="PrintMyTweetApp"></div>
         </div>
-        <div class="portfolioPagePrintMyTweetAppProject">
+        <div class="portfolioPageContent content">
             <div class="buttonsContainer">
                 <button>Demo</button>
                 <button>Code</button>
@@ -193,13 +204,13 @@
     </div>
     <!--End of Portfolio Page************************************************************************************-->
     <div class="fullscreen contactPage">
-        <div class="contactPageTitle">
+        <div class="contactPageTitle title">
             Contact Me
         </div>
-        <div class="contactPageButtonDiv">
+        <div class="contactPageMenu menu">
             <button>LinkedIn</button>
         </div>
-        <div class="contactPageForm">
+        <div class="contactPageContent content">
             <p>Main content</p>
         </div>
     </div>

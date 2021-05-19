@@ -1,0 +1,29 @@
+.contactPageMenu {
+    grid-column: 3/9;
+    grid-row: 6/19;
+}
+.contactPageMenu {
+    display: grid;
+    grid-template-columns: repeat(20, 1rem);
+    grid-template-rows: repeat(5, 3rem);
+    grid-row-gap: 0.5rem;
+}
+.contactPageMenu button {
+    color: #28243d;
+    border: none;
+    background-color: white;
+    text-align: left;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+/*styling of each button inside menu*/
+.contactPageMenu button {
+    grid-column: 1/19;
+    grid-row: 1/2;
+}
+
+/*styling of content*/
+.contactPageContent {
+    display: flex;
+    justify-content: center;  
+}
