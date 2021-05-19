@@ -1,0 +1,54 @@
+.portfolioPageMenu {
+    grid-column: 3/9;
+    grid-row: 6/19;
+}
+.portfolioPageMenu {
+    display: grid;
+    grid-template-columns: repeat(20, 1rem);
+    grid-template-rows: repeat(5, 3rem);
+    grid-row-gap: 0.5rem;
+}
+.portfolioPageMenu div{
+    width: 16rem;
+    height: 9rem;
+}
+.portfolioPageMenu div img{
+    width: 100%;
+    height: 100%;
+}
+.portfolioPageMenu .printMyTweetAppthumbnail{
+    border: #28243d 4px solid;
+}
+/*styling of content*/
+.portfolioPageContent {
+    grid-column: 9/19;
+    grid-row: 6/19;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start; 
+}
+.portfolioPageContent .buttonsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.portfolioPageContent .buttonsContainer button{
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border: none;
+}
+.portfolioPageContent .buttonsContainer button:hover{
+    background-color: #28243d;
+    color: white;
+    border: none;
+}
+.portfolioPageContent .description ul,
+.portfolioPageContent .description ol {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
